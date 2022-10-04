@@ -71,9 +71,9 @@ class MainViewController: UIViewController {
     private func setConstraints() {
         mainImageView.snp.makeConstraints { make in
             make.top.equalTo(view.snp.top).offset(80)
-            make.leading.equalTo(view.snp.leading)
+            make.leading.equalTo(view.snp.leading).offset(20)
             make.trailing.equalTo(view.snp.trailing)
-            make.height.equalTo(myScreen.height / 2.5)
+            make.height.equalTo(myScreen.height / 3.2)
         }
         
         mainLabel.snp.makeConstraints { make in

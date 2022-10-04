@@ -7,20 +7,18 @@
 
 import UIKit
 
-class GFAlertVC: UIViewController {
+class AlertVC: UIViewController {
     
     let containerView = AlertContainerView()
-    let titleLabel = AnimalsLabel(text: "", textAlignment: .center, fontSize: 20, weight: .medium)
-    let messageLabel = AnimalsLabel(text: "", textAlignment: .center, fontSize: 20, weight: .medium)
-    let actionButton = AnimalsButton(backgroundColor: UIColor.systemGreen, title: "Ok")
-    
+    let titleLabel = AnimalsLabel(text: "", textAlignment: .center, fontSize: 20, weight: .bold)
+    let messageLabel = AnimalsLabel(text: "", textAlignment: .center, fontSize: 16, weight: .regular)
+    let actionButton = AnimalsButton(backgroundColor: UIColor.init(hex: "F92968"), title: "Ok")
     
     var alertTitle: String?
     var message: String?
     var buttonTitle: String?
     
     let padding: CGFloat = 20
-    
     
     init(alertTitle: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
@@ -33,7 +31,6 @@ class GFAlertVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
@@ -43,61 +40,59 @@ class GFAlertVC: UIViewController {
         configureMessageLabel()
     }
     
-    
     func configureContainerView() {
         view.addSubview(containerView)
 
-        NSLayoutConstraint.activate([
-            containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            containerView.widthAnchor.constraint(equalToConstant: 280),
-            containerView.heightAnchor.constraint(equalToConstant: 220)
-        ])
+        containerView.snp.makeConstraints { make in
+            make.centerX.centerY.equalTo(view)
+            make.height.equalTo(220)
+            make.width.equalTo(280)
+        }
     }
-    
-    
+
     func configureTitleLabel() {
         containerView.addSubview(titleLabel)
         titleLabel.text = alertTitle ?? "Something went wrong"
-        
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
-            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            titleLabel.heightAnchor.constraint(equalToConstant: 28)
-        ])
+
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(containerView).offset(20)
+            make.leading.equalTo(containerView).offset(20)
+            make.trailing.equalTo(containerView).offset(-20)
+            make.height.equalTo(28)
+        }
     }
-    
+
     
     func configureActionButton() {
         containerView.addSubview(actionButton)
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
         actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
-        NSLayoutConstraint.activate([
-            actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
-            actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            actionButton.heightAnchor.constraint(equalToConstant: 44)
-        ])
+        actionButton.snp.makeConstraints { make in
+            make.bottom.equalTo(containerView.snp.bottom).offset(-20)
+            make.leading.equalTo(containerView).offset(20)
+            make.trailing.equalTo(containerView).offset(-20)
+            make.height.equalTo(44)
+        }
     }
-    
+
     
     func configureMessageLabel() {
         containerView.addSubview(messageLabel)
-        messageLabel.text           = message ?? "Unable to complete request"
+        messageLabel.text = message ?? "Unable to complete request"
         messageLabel.numberOfLines  = 4
-        
-        NSLayoutConstraint.activate([
-            messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-            messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
-        ])
+
+        messageLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.leading.equalTo(containerView).offset(20)
+            make.trailing.equalTo(containerView).offset(-20)
+            make.bottom.equalTo(actionButton.snp.top).offset(-12)
+        }
     }
     
     
     @objc func dismissVC() {
         dismiss(animated: true)
     }
+
 }

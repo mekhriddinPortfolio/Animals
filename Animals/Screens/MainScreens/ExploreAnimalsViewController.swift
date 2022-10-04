@@ -14,8 +14,12 @@ class ExploreAnimalsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.systemBackground
-        self.navigationItem.title = "Explore Animals"
-        
+        self.navigationItem.titleView = twoLineTitleView(text: "Explore Animals")
+        navigationController?.navigationBar.tintColor = UIColor.label
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        let appearance = UINavigationBarAppearance()
+            appearance.shadowColor = nil
+            navigationController?.navigationBar.standardAppearance = appearance
         configureCollectionView()
     }
     
@@ -76,6 +80,11 @@ extension ExploreAnimalsViewController: UICollectionViewDelegate, UICollectionVi
         collectionView.visibleCells.forEach { transform(cell: $0) }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = AnimalInfoViewController()
+        vc.index = indexPath.row
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 

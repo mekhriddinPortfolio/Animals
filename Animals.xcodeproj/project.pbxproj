@@ -9,21 +9,101 @@
 /* Begin PBXBuildFile section */
 		10987FCA28E70EEE0046A36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FC928E70EEE0046A36F /* AppDelegate.swift */; };
 		10987FCC28E70EEE0046A36F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FCB28E70EEE0046A36F /* SceneDelegate.swift */; };
-		10987FCE28E70EEE0046A36F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FCD28E70EEE0046A36F /* ViewController.swift */; };
-		10987FD128E70EEE0046A36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10987FCF28E70EEE0046A36F /* Main.storyboard */; };
+		10987FCE28E70EEE0046A36F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FCD28E70EEE0046A36F /* MainViewController.swift */; };
 		10987FD328E70EEF0046A36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10987FD228E70EEF0046A36F /* Assets.xcassets */; };
 		10987FD628E70EEF0046A36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10987FD428E70EEF0046A36F /* LaunchScreen.storyboard */; };
+		10987FDF28E717090046A36F /* AnimalsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FDE28E717090046A36F /* AnimalsImageView.swift */; };
+		10987FE228E71AB30046A36F /* AnimalsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FE128E71AB30046A36F /* AnimalsLabel.swift */; };
+		10987FE428E71CF30046A36F /* AnimalsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FE328E71CF30046A36F /* AnimalsButton.swift */; };
+		10987FE828E7222F0046A36F /* ExploreAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FE728E7222F0046A36F /* ExploreAnimalsViewController.swift */; };
+		10987FEC28E722910046A36F /* GuessAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FEB28E722910046A36F /* GuessAnimalsViewController.swift */; };
+		10987FEF28E722CD0046A36F /* TakeQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FEE28E722CD0046A36F /* TakeQuizViewController.swift */; };
+		10987FF228E722F80046A36F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FF128E722F80046A36F /* FavoriteViewController.swift */; };
+		10987FF428E7260F0046A36F /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FF328E7260F0046A36F /* Ext+UIColor.swift */; };
+		10987FF828E727910046A36F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FF728E727910046A36F /* CollectionViewCell.swift */; };
+		10987FFB28E72A660046A36F /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FFA28E72A660046A36F /* Animals.swift */; };
+		1098800028E77B2B0046A36F /* AnimalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10987FFF28E77B2B0046A36F /* AnimalInfoViewController.swift */; };
+		1098800328E797E20046A36F /* Lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800228E797E20046A36F /* Lion.mp3 */; };
+		1098800528E7AEBF0046A36F /* Tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800428E7AEBF0046A36F /* Tiger.mp3 */; };
+		1098800728E7AF1D0046A36F /* Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800628E7AF1D0046A36F /* Horse.mp3 */; };
+		1098800928E7AF6C0046A36F /* Zebra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800828E7AF6B0046A36F /* Zebra.mp3 */; };
+		1098800B28E7AFAD0046A36F /* Elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800A28E7AFAD0046A36F /* Elephant.mp3 */; };
+		1098800D28E7AFEF0046A36F /* Monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800C28E7AFEF0046A36F /* Monkey.mp3 */; };
+		1098800F28E7B0360046A36F /* Giraffe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098800E28E7B0360046A36F /* Giraffe.mp3 */; };
+		1098801128E7B0720046A36F /* Crocodile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801028E7B0720046A36F /* Crocodile.mp3 */; };
+		1098801328E7B0A60046A36F /* Wolf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801228E7B0A60046A36F /* Wolf.mp3 */; };
+		1098801528E7B0D90046A36F /* Hippo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801428E7B0D90046A36F /* Hippo.mp3 */; };
+		1098801728E7B1170046A36F /* Fox.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801628E7B1170046A36F /* Fox.mp3 */; };
+		1098801928E7B15E0046A36F /* Bear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801828E7B15E0046A36F /* Bear.mp3 */; };
+		1098801B28E7B1960046A36F /* Panda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801A28E7B1960046A36F /* Panda.mp3 */; };
+		1098801D28E7B1D10046A36F /* Snake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801C28E7B1D10046A36F /* Snake.mp3 */; };
+		1098801F28E7B1FF0046A36F /* Camel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098801E28E7B1FF0046A36F /* Camel.mp3 */; };
+		1098802128E7B3140046A36F /* Deer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098802028E7B3140046A36F /* Deer.mp3 */; };
+		1098802528E7B43B0046A36F /* Rhinoceros.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1098802428E7B43B0046A36F /* Rhinoceros.mp3 */; };
+		1098802728E7B74F0046A36F /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098802628E7B74F0046A36F /* Ext+String.swift */; };
+		1098802928E7BAEE0046A36F /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098802828E7BAEE0046A36F /* Ext+UIViewController.swift */; };
+		1098802B28E7D9960046A36F /* SlideUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098802A28E7D9960046A36F /* SlideUpViewController.swift */; };
+		1098802D28E7DB150046A36F /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098802C28E7DB150046A36F /* SlideInPresentationManager.swift */; };
+		1098802F28E7DB3B0046A36F /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098802E28E7DB3B0046A36F /* SlideInPresentationController.swift */; };
+		1098803128E7DB720046A36F /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098803028E7DB720046A36F /* SlideInPresentationAnimator.swift */; };
+		1098803428E8A0F70046A36F /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098803328E8A0F70046A36F /* AlertVC.swift */; };
+		1098803628E8A1220046A36F /* AlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098803528E8A1220046A36F /* AlertContainerView.swift */; };
+		1098803828E98D690046A36F /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098803728E98D690046A36F /* FavoritesTableViewCell.swift */; };
+		1098803B28E98E940046A36F /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098803A28E98E940046A36F /* PersistanceManager.swift */; };
+		1098804128E994C50046A36F /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1098803F28E994C50046A36F /* MyCoreData.xcdatamodeld */; };
+		A89BE3A70AB49465A9CEED2C /* Pods_Animals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE50EBD346390E066757105F /* Pods_Animals.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10987FC628E70EEE0046A36F /* Animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10987FC928E70EEE0046A36F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10987FCB28E70EEE0046A36F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10987FCD28E70EEE0046A36F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10987FD028E70EEE0046A36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10987FCD28E70EEE0046A36F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10987FD228E70EEF0046A36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10987FD528E70EEF0046A36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10987FD728E70EEF0046A36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10987FDE28E717090046A36F /* AnimalsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsImageView.swift; sourceTree = "<group>"; };
+		10987FE128E71AB30046A36F /* AnimalsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsLabel.swift; sourceTree = "<group>"; };
+		10987FE328E71CF30046A36F /* AnimalsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsButton.swift; sourceTree = "<group>"; };
+		10987FE728E7222F0046A36F /* ExploreAnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAnimalsViewController.swift; sourceTree = "<group>"; };
+		10987FEB28E722910046A36F /* GuessAnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAnimalsViewController.swift; sourceTree = "<group>"; };
+		10987FEE28E722CD0046A36F /* TakeQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeQuizViewController.swift; sourceTree = "<group>"; };
+		10987FF128E722F80046A36F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		10987FF328E7260F0046A36F /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
+		10987FF728E727910046A36F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		10987FFA28E72A660046A36F /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		10987FFF28E77B2B0046A36F /* AnimalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfoViewController.swift; sourceTree = "<group>"; };
+		1098800228E797E20046A36F /* Lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lion.mp3; sourceTree = "<group>"; };
+		1098800428E7AEBF0046A36F /* Tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tiger.mp3; sourceTree = "<group>"; };
+		1098800628E7AF1D0046A36F /* Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Horse.mp3; sourceTree = "<group>"; };
+		1098800828E7AF6B0046A36F /* Zebra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zebra.mp3; sourceTree = "<group>"; };
+		1098800A28E7AFAD0046A36F /* Elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Elephant.mp3; sourceTree = "<group>"; };
+		1098800C28E7AFEF0046A36F /* Monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Monkey.mp3; sourceTree = "<group>"; };
+		1098800E28E7B0360046A36F /* Giraffe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Giraffe.mp3; sourceTree = "<group>"; };
+		1098801028E7B0720046A36F /* Crocodile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crocodile.mp3; sourceTree = "<group>"; };
+		1098801228E7B0A60046A36F /* Wolf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wolf.mp3; sourceTree = "<group>"; };
+		1098801428E7B0D90046A36F /* Hippo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hippo.mp3; sourceTree = "<group>"; };
+		1098801628E7B1170046A36F /* Fox.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fox.mp3; sourceTree = "<group>"; };
+		1098801828E7B15E0046A36F /* Bear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bear.mp3; sourceTree = "<group>"; };
+		1098801A28E7B1960046A36F /* Panda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Panda.mp3; sourceTree = "<group>"; };
+		1098801C28E7B1D10046A36F /* Snake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Snake.mp3; sourceTree = "<group>"; };
+		1098801E28E7B1FF0046A36F /* Camel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Camel.mp3; sourceTree = "<group>"; };
+		1098802028E7B3140046A36F /* Deer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Deer.mp3; sourceTree = "<group>"; };
+		1098802428E7B43B0046A36F /* Rhinoceros.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rhinoceros.mp3; sourceTree = "<group>"; };
+		1098802628E7B74F0046A36F /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
+		1098802828E7BAEE0046A36F /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
+		1098802A28E7D9960046A36F /* SlideUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideUpViewController.swift; sourceTree = "<group>"; };
+		1098802C28E7DB150046A36F /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
+		1098802E28E7DB3B0046A36F /* SlideInPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
+		1098803028E7DB720046A36F /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		1098803328E8A0F70046A36F /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		1098803528E8A1220046A36F /* AlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainerView.swift; sourceTree = "<group>"; };
+		1098803728E98D690046A36F /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		1098803A28E98E940046A36F /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		1098804028E994C50046A36F /* MyCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreData.xcdatamodel; sourceTree = "<group>"; };
+		3E44E8013C7B63424870EECB /* Pods-Animals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animals.debug.xcconfig"; path = "Target Support Files/Pods-Animals/Pods-Animals.debug.xcconfig"; sourceTree = "<group>"; };
+		B7705645FBD433D7C7D5344F /* Pods-Animals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animals.release.xcconfig"; path = "Target Support Files/Pods-Animals/Pods-Animals.release.xcconfig"; sourceTree = "<group>"; };
+		BE50EBD346390E066757105F /* Pods_Animals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89BE3A70AB49465A9CEED2C /* Pods_Animals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +123,8 @@
 			children = (
 				10987FC828E70EEE0046A36F /* Animals */,
 				10987FC728E70EEE0046A36F /* Products */,
+				2B366DE30A88EA2156DB4FE1 /* Pods */,
+				76EF60B89DA5580190EFC102 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +139,158 @@
 		10987FC828E70EEE0046A36F /* Animals */ = {
 			isa = PBXGroup;
 			children = (
+				1098803928E98E860046A36F /* Managers */,
+				1098803228E7DC080046A36F /* SlideInPresentation */,
+				1098800128E797B30046A36F /* Pronunciation */,
+				10987FF928E72A5C0046A36F /* Model */,
+				10987FF628E727820046A36F /* Cells */,
+				10987FF528E726140046A36F /* Extensions */,
+				10987FDD28E716CF0046A36F /* Views */,
+				10987FE028E717B20046A36F /* Screens */,
 				10987FC928E70EEE0046A36F /* AppDelegate.swift */,
 				10987FCB28E70EEE0046A36F /* SceneDelegate.swift */,
-				10987FCD28E70EEE0046A36F /* ViewController.swift */,
-				10987FCF28E70EEE0046A36F /* Main.storyboard */,
 				10987FD228E70EEF0046A36F /* Assets.xcassets */,
 				10987FD428E70EEF0046A36F /* LaunchScreen.storyboard */,
 				10987FD728E70EEF0046A36F /* Info.plist */,
+				1098803F28E994C50046A36F /* MyCoreData.xcdatamodeld */,
 			);
 			path = Animals;
+			sourceTree = "<group>";
+		};
+		10987FDD28E716CF0046A36F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10987FDE28E717090046A36F /* AnimalsImageView.swift */,
+				10987FE128E71AB30046A36F /* AnimalsLabel.swift */,
+				10987FE328E71CF30046A36F /* AnimalsButton.swift */,
+				1098803328E8A0F70046A36F /* AlertVC.swift */,
+				1098803528E8A1220046A36F /* AlertContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10987FE028E717B20046A36F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				10987FFC28E779DB0046A36F /* HomeScreen */,
+				10987FFD28E77A840046A36F /* MainScreens */,
+				10987FFE28E77AAD0046A36F /* OtherScreens */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		10987FF528E726140046A36F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10987FF328E7260F0046A36F /* Ext+UIColor.swift */,
+				1098802628E7B74F0046A36F /* Ext+String.swift */,
+				1098802828E7BAEE0046A36F /* Ext+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10987FF628E727820046A36F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				10987FF728E727910046A36F /* CollectionViewCell.swift */,
+				1098803728E98D690046A36F /* FavoritesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		10987FF928E72A5C0046A36F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10987FFA28E72A660046A36F /* Animals.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10987FFC28E779DB0046A36F /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				10987FCD28E70EEE0046A36F /* MainViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		10987FFD28E77A840046A36F /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				10987FE728E7222F0046A36F /* ExploreAnimalsViewController.swift */,
+				10987FEB28E722910046A36F /* GuessAnimalsViewController.swift */,
+				10987FEE28E722CD0046A36F /* TakeQuizViewController.swift */,
+				10987FF128E722F80046A36F /* FavoriteViewController.swift */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		10987FFE28E77AAD0046A36F /* OtherScreens */ = {
+			isa = PBXGroup;
+			children = (
+				10987FFF28E77B2B0046A36F /* AnimalInfoViewController.swift */,
+				1098802A28E7D9960046A36F /* SlideUpViewController.swift */,
+			);
+			path = OtherScreens;
+			sourceTree = "<group>";
+		};
+		1098800128E797B30046A36F /* Pronunciation */ = {
+			isa = PBXGroup;
+			children = (
+				1098800228E797E20046A36F /* Lion.mp3 */,
+				1098800428E7AEBF0046A36F /* Tiger.mp3 */,
+				1098800628E7AF1D0046A36F /* Horse.mp3 */,
+				1098800828E7AF6B0046A36F /* Zebra.mp3 */,
+				1098800A28E7AFAD0046A36F /* Elephant.mp3 */,
+				1098800C28E7AFEF0046A36F /* Monkey.mp3 */,
+				1098800E28E7B0360046A36F /* Giraffe.mp3 */,
+				1098801028E7B0720046A36F /* Crocodile.mp3 */,
+				1098801228E7B0A60046A36F /* Wolf.mp3 */,
+				1098801428E7B0D90046A36F /* Hippo.mp3 */,
+				1098801628E7B1170046A36F /* Fox.mp3 */,
+				1098801828E7B15E0046A36F /* Bear.mp3 */,
+				1098801A28E7B1960046A36F /* Panda.mp3 */,
+				1098801C28E7B1D10046A36F /* Snake.mp3 */,
+				1098801E28E7B1FF0046A36F /* Camel.mp3 */,
+				1098802028E7B3140046A36F /* Deer.mp3 */,
+				1098802428E7B43B0046A36F /* Rhinoceros.mp3 */,
+			);
+			path = Pronunciation;
+			sourceTree = "<group>";
+		};
+		1098803228E7DC080046A36F /* SlideInPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				1098802C28E7DB150046A36F /* SlideInPresentationManager.swift */,
+				1098802E28E7DB3B0046A36F /* SlideInPresentationController.swift */,
+				1098803028E7DB720046A36F /* SlideInPresentationAnimator.swift */,
+			);
+			path = SlideInPresentation;
+			sourceTree = "<group>";
+		};
+		1098803928E98E860046A36F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1098803A28E98E940046A36F /* PersistanceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2B366DE30A88EA2156DB4FE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E44E8013C7B63424870EECB /* Pods-Animals.debug.xcconfig */,
+				B7705645FBD433D7C7D5344F /* Pods-Animals.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		76EF60B89DA5580190EFC102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE50EBD346390E066757105F /* Pods_Animals.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10987FDA28E70EEF0046A36F /* Build configuration list for PBXNativeTarget "Animals" */;
 			buildPhases = (
+				73791F4329B5FFB0DEF5E28B /* [CP] Check Pods Manifest.lock */,
 				10987FC228E70EEE0046A36F /* Sources */,
 				10987FC328E70EEE0046A36F /* Frameworks */,
 				10987FC428E70EEE0046A36F /* Resources */,
+				98A0F4F8D0A758BAF7524D38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +353,108 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1098801528E7B0D90046A36F /* Hippo.mp3 in Resources */,
+				1098800328E797E20046A36F /* Lion.mp3 in Resources */,
+				1098801D28E7B1D10046A36F /* Snake.mp3 in Resources */,
+				1098800F28E7B0360046A36F /* Giraffe.mp3 in Resources */,
+				1098802128E7B3140046A36F /* Deer.mp3 in Resources */,
 				10987FD628E70EEF0046A36F /* LaunchScreen.storyboard in Resources */,
+				1098800928E7AF6C0046A36F /* Zebra.mp3 in Resources */,
+				1098801928E7B15E0046A36F /* Bear.mp3 in Resources */,
+				1098800728E7AF1D0046A36F /* Horse.mp3 in Resources */,
+				1098802528E7B43B0046A36F /* Rhinoceros.mp3 in Resources */,
+				1098800D28E7AFEF0046A36F /* Monkey.mp3 in Resources */,
+				1098801328E7B0A60046A36F /* Wolf.mp3 in Resources */,
+				1098801128E7B0720046A36F /* Crocodile.mp3 in Resources */,
 				10987FD328E70EEF0046A36F /* Assets.xcassets in Resources */,
-				10987FD128E70EEE0046A36F /* Main.storyboard in Resources */,
+				1098801B28E7B1960046A36F /* Panda.mp3 in Resources */,
+				1098800528E7AEBF0046A36F /* Tiger.mp3 in Resources */,
+				1098801728E7B1170046A36F /* Fox.mp3 in Resources */,
+				1098801F28E7B1FF0046A36F /* Camel.mp3 in Resources */,
+				1098800B28E7AFAD0046A36F /* Elephant.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73791F4329B5FFB0DEF5E28B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A0F4F8D0A758BAF7524D38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animals/Pods-Animals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animals/Pods-Animals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Animals/Pods-Animals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10987FC228E70EEE0046A36F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10987FCE28E70EEE0046A36F /* ViewController.swift in Sources */,
+				10987FDF28E717090046A36F /* AnimalsImageView.swift in Sources */,
+				1098803428E8A0F70046A36F /* AlertVC.swift in Sources */,
+				1098803128E7DB720046A36F /* SlideInPresentationAnimator.swift in Sources */,
+				10987FFB28E72A660046A36F /* Animals.swift in Sources */,
+				1098803828E98D690046A36F /* FavoritesTableViewCell.swift in Sources */,
+				10987FE828E7222F0046A36F /* ExploreAnimalsViewController.swift in Sources */,
+				10987FF828E727910046A36F /* CollectionViewCell.swift in Sources */,
+				10987FCE28E70EEE0046A36F /* MainViewController.swift in Sources */,
+				1098802B28E7D9960046A36F /* SlideUpViewController.swift in Sources */,
 				10987FCA28E70EEE0046A36F /* AppDelegate.swift in Sources */,
+				1098803628E8A1220046A36F /* AlertContainerView.swift in Sources */,
+				1098800028E77B2B0046A36F /* AnimalInfoViewController.swift in Sources */,
+				10987FF228E722F80046A36F /* FavoriteViewController.swift in Sources */,
+				1098802728E7B74F0046A36F /* Ext+String.swift in Sources */,
+				1098802D28E7DB150046A36F /* SlideInPresentationManager.swift in Sources */,
+				1098803B28E98E940046A36F /* PersistanceManager.swift in Sources */,
+				10987FEC28E722910046A36F /* GuessAnimalsViewController.swift in Sources */,
+				10987FE428E71CF30046A36F /* AnimalsButton.swift in Sources */,
+				10987FF428E7260F0046A36F /* Ext+UIColor.swift in Sources */,
 				10987FCC28E70EEE0046A36F /* SceneDelegate.swift in Sources */,
+				10987FE228E71AB30046A36F /* AnimalsLabel.swift in Sources */,
+				1098802928E7BAEE0046A36F /* Ext+UIViewController.swift in Sources */,
+				10987FEF28E722CD0046A36F /* TakeQuizViewController.swift in Sources */,
+				1098802F28E7DB3B0046A36F /* SlideInPresentationController.swift in Sources */,
+				1098804128E994C50046A36F /* MyCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		10987FCF28E70EEE0046A36F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10987FD028E70EEE0046A36F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		10987FD428E70EEF0046A36F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +582,7 @@
 		};
 		10987FDB28E70EEF0046A36F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E44E8013C7B63424870EECB /* Pods-Animals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +591,12 @@
 				DEVELOPMENT_TEAM = FZU84SDGV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Animals/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Explore Animal Kingdom";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +604,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mekhriddin.GitHubRepoInfinBankTask.Animals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		10987FDC28E70EEF0046A36F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7705645FBD433D7C7D5344F /* Pods-Animals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +624,12 @@
 				DEVELOPMENT_TEAM = FZU84SDGV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Animals/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Explore Animal Kingdom";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +637,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mekhriddin.GitHubRepoInfinBankTask.Animals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +668,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1098803F28E994C50046A36F /* MyCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1098804028E994C50046A36F /* MyCoreData.xcdatamodel */,
+			);
+			currentVersion = 1098804028E994C50046A36F /* MyCoreData.xcdatamodel */;
+			path = MyCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10987FBE28E70EEE0046A36F /* Project object */;
 }
